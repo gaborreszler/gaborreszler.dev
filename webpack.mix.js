@@ -11,5 +11,6 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.less('resources/less/introduction.less', 'public/css').version();
+mix.less('resources/less/introduction.less', 'public/css');
 mix.copyDirectory('resources/img', 'public/img');
+mix.version(['public/img/gabor-reszler.png']);
