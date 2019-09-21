@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+		<title>Gabor Reszler | Full-Stack Web Developer</title>
+
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
@@ -20,8 +22,6 @@
 
 		<!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900&display=swap" rel="stylesheet">
-
-        <title>Gabor Reszler | Full-Stack Web Developer</title>
 
 		@if (app()->environment('production'))
 		<!-- Google Analytics -->
