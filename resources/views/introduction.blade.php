@@ -15,6 +15,18 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900&display=swap" rel="stylesheet">
 
         <title>Gabor Reszler | Full-Stack Web Developer</title>
+
+		@if (app()->environment('production'))
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147988961-1"></script>
+		<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-147988961-1');
+		</script>
+		@endif
     </head>
 
     <body>
