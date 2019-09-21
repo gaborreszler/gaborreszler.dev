@@ -60,8 +60,8 @@
 						<p>
 							Full-Stack Web Developer @ <a href="#">VTL Design</a><br>
 							<span class="additional-content content-grey">
-										Developing & maintaining <code>Laravel</code>/<code>Symfony</code> websites
-									</span>
+								Developing & maintaining <code>Laravel</code>/<code>Symfony</code> websites
+							</span>
 						</p>
 						<p class="content-grey">
 							Junior Web Developer @ Cartographia
