@@ -86,8 +86,9 @@
 		<footer>
 			<section class="col-md-12 text-center">
 				<small>
-					@ 2019 <a href="#">gaborreszler.dev</a>
-					<br>Built with <code>Bootstrap</code>
+					Built with <code>Laravel</code> & <code>Bootstrap</code>
+					<br>Hosted on my Raspberry Pi
+					<br>@ {{ date('Y') }} <a href="/">gaborreszler.dev</a>
 				</small>
 			</section>
 		</footer>
