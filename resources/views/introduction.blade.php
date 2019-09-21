@@ -36,7 +36,7 @@
 					<h1>Gabor</h1>
 				</div>
 				<div class="col-sm-4 col-lg-2 text-center">
-					<img src="{{ mix('assets/img/gabor-reszler.png') }}" alt="Portrait picture of Gabor Reszler" />
+					<img src="/assets/img/gabor-reszler.png" alt="Portrait picture of Gabor Reszler" />
 				</div>
 				<div class="col-sm-4 col-lg-5 text-sm-left text-center">
 					<h1>Reszler</h1>
