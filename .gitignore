@@ -1,8 +1,6 @@
 /.idea
 /node_modules
-/public/css
-/public/img
-/public/js
+/public/assets/*
 /public/mix-manifest.json
 /public/hot
 /public/storage

@@ -5,16 +5,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+		<title>Gabor Reszler | Full-Stack Web Developer</title>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+		<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+
         <!-- Bootstrap CSS -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 		<!-- Introduction CSS -->
-		<link href="{{ mix('css/introduction.css') }}" rel="stylesheet">
+		<link href="{{ mix('assets/css/introduction.css') }}" rel="stylesheet">
 
 		<!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900&display=swap" rel="stylesheet">
 
-        <title>Gabor Reszler | Full-Stack Web Developer</title>
+		@if (app()->environment('production'))
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147988961-1"></script>
+		<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-147988961-1');
+		</script>
+		@endif
     </head>
 
     <body>
@@ -24,7 +43,7 @@
 					<h1>Gabor</h1>
 				</div>
 				<div class="col-sm-4 col-lg-2 text-center">
-					<img src="{{ mix('img/gabor-reszler.png') }}" alt="Portrait picture of Gabor Reszler" />
+					<img src="/assets/img/gabor-reszler.png" alt="Portrait picture of Gabor Reszler" />
 				</div>
 				<div class="col-sm-4 col-lg-5 text-sm-left text-center">
 					<h1>Reszler</h1>
@@ -41,8 +60,8 @@
 						<p>
 							Full-Stack Web Developer @ <a href="#">VTL Design</a><br>
 							<span class="additional-content content-grey">
-										Developing & maintaining <code>Laravel</code>/<code>Symfony</code> websites
-									</span>
+								Developing & maintaining <code>Laravel</code>/<code>Symfony</code> websites
+							</span>
 						</p>
 						<p class="content-grey">
 							Junior Web Developer @ Cartographia
@@ -67,8 +86,9 @@
 		<footer>
 			<section class="col-md-12 text-center">
 				<small>
-					@ 2019 <a href="#">gaborreszler.dev</a>
-					<br>Built with <code>Bootstrap</code>
+					Built with <code>Laravel</code> & <code>Bootstrap</code>
+					<br>Hosted on my Raspberry Pi
+					<br>@ {{ date('Y') }} <a href="/">gaborreszler.dev</a>
 				</small>
 			</section>
 		</footer>
