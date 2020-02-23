@@ -92,3 +92,38 @@ body {
 		}
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: #efebe7;
+
+		section {
+			a {
+				color: #efebe7;
+			}
+		}
+
+		main {
+			.container-one, .container-two {
+				hr {
+					background-color: white;
+				}
+			}
+
+			.container-one {
+				background-color: #181818;
+
+				.content-one {
+					.content-grey {
+						color: #b9b9b9;
+					}
+				}
+			}
+
+			.container-two {
+				background-color: #9afb5ecc;
+			}
+		}
+	}
+}

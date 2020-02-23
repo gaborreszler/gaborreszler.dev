@@ -7,6 +7,8 @@
 
 		<title>Gabor Reszler | Full-Stack Web Developer</title>
 
+		<link rel="canonical" href="https://www.gaborreszler.dev">
+
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
