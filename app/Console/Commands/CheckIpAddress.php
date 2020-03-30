@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Events\IpAddressChanged;
 use App\IpAddress;
 use Illuminate\Console\Command;
+use Illuminate\Http\Request;
 
 class CheckIpAddress extends Command
 {
@@ -60,7 +61,11 @@ class CheckIpAddress extends Command
 		if (($current_ip_address = IpAddress::current()->value) !== $ip_address) {
 			event(new IpAddressChanged($current_ip_address, $ip_address));
 
-			//create request
+			$request = new Request();
+			$request->setMethod('POST');
+			$request->request->add([
+				"ip_address" => $ip_address
+			]);
 
 			//store the new IP address based on the request
 		}
