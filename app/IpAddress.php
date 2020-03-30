@@ -10,4 +10,9 @@ class IpAddress extends Model
 	{
 		return $this->hasMany('App\Domain');
 	}
+
+	public static function current()
+	{
+		return IpAddress::where('is_current', true)->first();
+    }
 }
