@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Events\IpAddressChanged;
 use App\IpAddress;
 use Illuminate\Console\Command;
 
@@ -57,7 +58,7 @@ class CheckIpAddress extends Command
 		}
 
 		if (($current_ip_address = IpAddress::current()->value) !== $ip_address) {
-			//dispatch event
+			event(new IpAddressChanged($current_ip_address, $ip_address));
 
 			//create request
 
