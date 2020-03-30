@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Events\IpAddressChanged;
+use App\Listeners\SendIpAddressChangementNotification;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -20,7 +21,7 @@ class EventServiceProvider extends ServiceProvider
             SendEmailVerificationNotification::class,
         ],
 		IpAddressChanged::class => [
-			//register listener
+			SendIpAddressChangementNotification::class,
 		]
     ];
 
