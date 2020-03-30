@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Events\IpAddressChanged;
+use App\Http\Controllers\IpAddressController;
 use App\IpAddress;
 use Illuminate\Console\Command;
 use Illuminate\Http\Request;
@@ -67,7 +68,8 @@ class CheckIpAddress extends Command
 				"ip_address" => $ip_address
 			]);
 
-			//store the new IP address based on the request
+			$controller = new IpAddressController();
+			$controller->store($request);
 		}
 
 		exit;
